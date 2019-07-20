@@ -33,6 +33,7 @@ def post_add():
         post_store.add(new_post)
         app.current_id += 1
         return redirect(url_for('home'))
+    
     elif request.method=='GET':
         return render_template("post_add.html")
 
